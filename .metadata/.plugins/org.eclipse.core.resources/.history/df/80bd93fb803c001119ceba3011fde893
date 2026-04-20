@@ -1,0 +1,23 @@
+package com.example.demo.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class RoleMasterDto {
+
+	   private String userId;
+	    private String userName;
+	    private String userMobile;
+	    private String userEmail;
+	    private String userRole;
+	    private String userOfficeId;
+
+}

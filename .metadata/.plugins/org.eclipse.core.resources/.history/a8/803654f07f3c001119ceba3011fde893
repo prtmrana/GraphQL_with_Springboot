@@ -1,0 +1,21 @@
+type User {
+    userId: ID
+    userName: String
+    userEmail: String
+    userMobile: String
+    userRole: String
+    userActive: String
+}
+
+type Query {
+    getAllUsers: [User]
+    getUserById(userId: ID): User
+}
+
+
+type Role {
+    roleDept: String
+    rolePosition: String
+    roleName: String
+    roleStatus: String
+}

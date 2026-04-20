@@ -1,0 +1,42 @@
+package com.example.demo.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Entity
+@Table(name = "role_master")
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class RoleMasterEntity {
+
+	    @Id
+	    @Column(name = "ROLE_ID")
+	    private String roleId;
+
+	    @Column(name = "ROLE_SHORTNAME")
+	    private String roleName;
+
+	    @Column(name = "ROLE_POSITION")
+	    private String rolePosition;
+
+	    @Column(name = "ROLE_DEPT")
+	    private String roleDept;
+
+	    @Column(name = "MODULE_CODE")
+	    private String moduleCode;
+
+	    @Column(name = "PRODUCT_NAME")
+	    private String productName;
+	    
+	    @Column(name = "ROLE_STATUS")
+	    private String roleStatus;
+}
+
